@@ -65,7 +65,7 @@ const minified = {
   plugins: [
     ...baseConfig.plugins,
     new webpack.DefinePlugin({
-      PEARMILL_BASE_URL: JSON.stringify('https://api.pearmill.com')
+      PEARMILL_BASE_URL: JSON.stringify('https://consumer.pearmill.com')
     })
   ]
 }
