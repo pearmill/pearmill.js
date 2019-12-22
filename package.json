@@ -1,0 +1,28 @@
+{
+  "name": "pearmill.js",
+  "version": "1.0.0",
+  "description": "Pearmill's tracking and lead scoring script.",
+  "main": "pearmill.js",
+  "repository": "https://github.com/pearmill/pearmill.js",
+  "author": "Nima Gardideh <nima@pearmill.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest",
+    "publish": "npm publish --access=public && gsutil cp pearmill.min.js gs://pearmill.appspot.com"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.6.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@pearmill/attribution.js": "^1.0.3",
+    "js-cookie": "^2.2.1",
+    "psl": "^1.6.0",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
